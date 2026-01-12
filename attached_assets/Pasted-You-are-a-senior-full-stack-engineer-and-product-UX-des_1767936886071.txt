@@ -1,0 +1,138 @@
+You are a senior full-stack engineer and product UX designer.
+
+Build a ChatGPT-quality conversational travel application with a clean, calm, and minimal interface.
+
+APP NAME:
+latiNlong – an AI travel buddy that helps users plan trips confidently without overpaying or getting scammed.
+
+PRIMARY UX MODEL (CRITICAL – FOLLOW EXACTLY):
+The app must behave like ChatGPT:
+
+1. On initial load, show a HOME / EMPTY STATE.
+2. The home state must display:
+   - A centered friendly message such as:
+     "Ready when you are."
+   - A short subtitle:
+     "Start a new chat to plan your trip."
+   - A prominent “New Chat” button.
+3. The chat input must be DISABLED on the home screen.
+4. Only after clicking “New Chat”:
+   - A new conversation is created
+   - The chat screen opens
+   - The input field becomes active
+   - The AI sends the first greeting message
+5. Do NOT auto-rename conversations.
+6. Conversations should be labeled generically:
+   - “Chat 1”, “Chat 2”, or timestamp-based
+   - Exactly like ChatGPT’s behavior
+
+DO NOT SKIP THIS UX BEHAVIOR.
+
+---
+
+CHAT EXPERIENCE:
+- WhatsApp / iMessage style chat bubbles
+- Subtle animations
+- Typing indicator for AI
+- Message timestamps
+- Scrolls naturally
+- No clutter, no banners, no ads
+
+---
+
+AI BEHAVIOR & PERSONALITY:
+- Calm
+- Friendly
+- Honest
+- Practical
+- Sounds like a well-traveled local friend
+- Never salesy
+- Never robotic
+- Never overly verbose
+
+---
+
+CONVERSATION FLOW:
+Once a chat starts, the AI should naturally guide the user:
+
+AI first message example:
+"Hi, I’m your travel buddy. Tell me where you’re heading and I’ll help you figure out the best stays, fair prices, and how to avoid tourist traps."
+
+The AI should ask questions conversationally:
+- Destination city
+- Number of days
+- Budget preference (Low / Medium / High)
+
+Avoid forms. Avoid checklists. Avoid overwhelming the user.
+
+---
+
+CORE FEATURES:
+1. Budget Intelligence
+   - Convert Low / Medium / High into real price ranges per city
+   - City-specific, realistic ranges
+
+2. Hotel Recommendations
+   - Suggest 3–5 best-fit hotels
+   - Focus on safety, location, and value-for-money
+   - Short, honest explanations
+
+3. Transport Cost Advisor
+   - Fair price ranges from:
+     Airport
+     Railway station
+   - Warn about common overpricing
+
+4. Follow-up Friendly
+   - Handle natural follow-up questions smoothly
+
+---
+
+UI / UX DESIGN REQUIREMENTS:
+- Mobile-first
+- Clean typography
+- Soft neutral color palette
+- Generous spacing
+- Clear visual hierarchy
+- Input box fixed at bottom (only active inside chat)
+- New Chat button always accessible in sidebar/header
+
+---
+
+TECH STACK:
+- Frontend: React with hooks
+- Styling: Tailwind CSS
+- Backend: Node.js with Express
+- State: Conversation-based memory
+- Database: SQLite or in-memory store for MVP
+
+---
+
+DATA STRUCTURE (MINIMAL):
+- Conversations (id, created_at)
+- Messages (conversation_id, role, content, timestamp)
+- Cities
+- Hotels
+- BudgetRanges
+- TransportCosts
+
+---
+
+IMPORTANT CONSTRAINTS:
+- Do NOT build booking or payment features
+- Do NOT auto-name conversations
+- Do NOT ask unnecessary questions
+- Do NOT overcomplicate logic
+- Do NOT overwhelm UI
+
+---
+
+DELIVERABLES:
+- Fully working chat-based app
+- Home / Empty state exactly as described
+- Clean component structure
+- Sample city data
+- Clear README
+
+GOAL:
+Create a calm, trustworthy, ChatGPT-level conversational travel assistant that feels premium, simple, and confidence-building.

@@ -1,0 +1,86 @@
+You are a senior full-stack engineer and product designer.
+
+Build a mobile-first web application that acts as an AI-powered “Travel Buddy” for travelers who want to avoid overpaying and tourist scams.
+
+CORE PRODUCT IDEA:
+The app helps travelers plan their stay in a city based on:
+- Number of days
+- Budget level (Low / Medium / High)
+- City selection
+The app recommends the best hotels within budget and advises fair transport costs to reach those hotels.
+The entire experience must feel like chatting with a smart local friend.
+
+TECH STACK:
+- Frontend: React (modern hooks), Tailwind CSS
+- Backend: Node.js with Express
+- Database: SQLite or PostgreSQL (simple schema)
+- AI: Chat-based conversational interface (LLM-ready abstraction, mock responses allowed)
+- Design: Clean, modern, WhatsApp-style chat UI
+
+UI / UX REQUIREMENTS (VERY IMPORTANT):
+1. The app should open directly into a chat interface.
+2. The AI should ask questions conversationally:
+   - “Which city are you visiting?”
+   - “How many days are you staying?”
+   - “What’s your budget? (Low / Medium / High)”
+3. Avoid forms as much as possible. Use chat bubbles + quick-reply buttons.
+4. Each recommendation should appear as a chat card:
+   - Hotel name
+   - Area
+   - Price per night
+   - Why it fits the user’s budget
+   - Fair transport cost from airport/railway
+5. Tone of AI: Friendly, local, helpful — NOT robotic.
+
+FEATURE REQUIREMENTS:
+1. Budget Mapping Logic:
+   - Convert Low / Medium / High into real price ranges per city.
+   - Example:
+     Low: budget stays
+     Medium: value-for-money hotels
+     High: premium but fair-priced hotels
+
+2. Hotel Recommendation Engine:
+   - Recommend 3–5 best-fit hotels
+   - Prioritize safety, location, and value over luxury
+   - Include short explanations like a local would give
+
+3. Transport Cost Advisor:
+   - Show fair price ranges to reach hotel from:
+     - Airport
+     - Railway station
+   - Flag overpriced situations with warnings
+
+4. Conversational Flow:
+   - AI should remember previous messages (session-based memory)
+   - Allow follow-up questions like:
+     - “Is this area safe?”
+     - “Can I get cheaper options?”
+     - “Is this close to tourist spots?”
+
+DATABASE SCHEMA (SIMPLE BUT SCALABLE):
+- Cities
+- BudgetRanges (city_id, low_min, low_max, medium_min, medium_max, high_min)
+- Hotels (name, city_id, area, avg_price, safety_score, value_score)
+- TransportCosts (hotel_id, from_location, min_price, max_price)
+
+DESIGN REQUIREMENTS:
+- Mobile-first layout
+- Smooth animations
+- Card-based recommendations inside chat
+- Minimal colors, high readability
+- Trust-focused UI (no ads, no clutter)
+
+DELIVERABLES:
+- Clean, well-commented code
+- Logical folder structure
+- Sample seed data for at least one city
+- Clear separation between UI, logic, and data
+- README explaining how to run and extend the project
+
+IMPORTANT:
+Do NOT build booking or payment features.
+Do NOT overwhelm the UI.
+Focus on trust, clarity, and simplicity.
+
+The goal is to create a delightful, conversational travel assistant that helps users avoid overpaying and make confident decisions.
